@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.App-body {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.load{
+  margin: 20px;
+  width: 150px;
+}
+.file{
+  display: none;
+}
+.container{
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alert-container {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+}
+.alert-modal {
+  margin: 0 auto;
+  cursor: default;
+  transition: opacity .4s;
+  overflow: scroll;
+  background: #fafafa;
+  padding-bottom: 1em;
+  border-radius: 10px;
+  max-width: 300px;
+  color: black;
+  padding: 0 20px;
+}
+h3, h5{
+  margin:0;
+}
+h3{
+  margin-top: 15px;
+}
+h5{
+  font-weight: 400;
+}
+.input-container{
+  display: grid;
+  margin-top: 20px;
+}
+.input-container label{
+  font-size: 12px;
+}
+.input{
+  border: 0;
+  background: #b7b7b7;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 4px;
+  color: rgb(94, 94, 94);
+}
+.button-container{
+  float: right;
+}
+.btn{
+  border: 0;
+  padding: 7px 18px;
+  border-radius: 7px;
+  margin: 25px 0px 10px 10px;
+}
+.btn-save{
+  color: white;
+  background: black;
+}
+.btn-cancel{
+  color: white;
+  background: blue;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+svg{
+  width: 20px;
+  height: 20px;
+}
+.options{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.tabulator-col-sorter{
+  display: none !important;
+}
+.analyze-container{
+  display: flex;
+}
+.analyze-container svg{
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+.space-between{
+  margin-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+.space-between div div{
+  width: 30px;
+  height: 30px;
+  background-color: lightblue;
+}
+.space-between div p{
+  margin: 0;
 }
